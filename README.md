@@ -47,6 +47,11 @@ The design is intentionally simple, quiet, and focused on the writing.
 - Static and lightweight
 - Mobile friendly
 
+## ✦ Live Website
+
+🌐 **[https://pavn31.github.io/Shayari/](https://pavn31.github.io/Shayari/)**
+
+
 ## ✦ Project Structure
 
 ```text
