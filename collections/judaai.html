@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Judaai — My Shayari</title>
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <style>
+      .judaai-page {
+        width: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+
+      .judaai-header {
+        padding-bottom: 90px;
+      }
+
+      .judaai-header .back {
+        display: inline-block;
+        margin-bottom: 55px;
+
+        color: var(--cherry);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+      }
+
+      .judaai-header h1 {
+        color: var(--cherry);
+
+        font-family: "Playfair Display", serif;
+        font-size: clamp(75px, 13vw, 150px);
+        font-weight: 400;
+
+        line-height: 0.82;
+        letter-spacing: -0.065em;
+      }
+
+      .judaai-header h1 em {
+        font-weight: 400;
+      }
+
+      .judaai-intro {
+        width: min(440px, 90%);
+
+        margin-top: 38px;
+        margin-left: 14%;
+
+        color: var(--muted);
+
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        font-style: italic;
+
+        line-height: 1.55;
+      }
+
+      .shayari-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .shayari-block {
+        position: relative;
+
+        padding: 65px 7% 75px;
+
+        border-top: 1px solid var(--border);
+      }
+
+      .shayari-block:last-child {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .shayari-number {
+        display: block;
+
+        margin-bottom: 32px;
+
+        color: var(--cherry-soft);
+
+        font-size: 10px;
+        letter-spacing: 0.22em;
+      }
+
+      .shayari-text {
+        max-width: 850px;
+
+        color: var(--cherry);
+
+        font-family: "Playfair Display", serif;
+        font-size: clamp(25px, 3.2vw, 42px);
+        font-weight: 400;
+
+        line-height: 1.55;
+        letter-spacing: -0.015em;
+      }
+
+      .shayari-block:nth-child(2) {
+        padding-left: 15%;
+      }
+
+      .shayari-block:nth-child(3) {
+        padding-left: 5%;
+      }
+
+      .shayari-block:nth-child(4) {
+        padding-left: 12%;
+      }
+
+      .shayari-block:nth-child(5) {
+        padding-left: 8%;
+      }
+
+      .shayari-block:nth-child(6) {
+        padding-left: 14%;
+      }
+
+      @media (max-width: 700px) {
+        .judaai-header {
+          padding-bottom: 60px;
+        }
+
+        .judaai-header .back {
+          margin-bottom: 40px;
+        }
+
+        .judaai-intro {
+          width: 90%;
+          margin-left: 3%;
+          font-size: 19px;
+        }
+
+        .shayari-block,
+        .shayari-block:nth-child(2),
+        .shayari-block:nth-child(3),
+        .shayari-block:nth-child(4),
+        .shayari-block:nth-child(5),
+        .shayari-block:nth-child(6) {
+          padding: 45px 5% 55px;
+        }
+
+        .shayari-number {
+          margin-bottom: 25px;
+        }
+
+        .shayari-text {
+          font-size: 25px;
+          line-height: 1.6;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="judaai-page">
+        <header class="judaai-header">
+          <a href="../pages/my-shayari.html" class="back"> ← My Shayari </a>
+
+          <p class="eyebrow">03 / JUDAAI</p>
+
+          <h1>
+            Some<br />
+            <em>goodbyes stay.</em>
+          </h1>
+
+          <p class="judaai-intro">
+            Some people leave, but their absence never does.
+          </p>
+        </header>
+
+        <section class="shayari-list">
+          <article class="shayari-block">
+            <span class="shayari-number">01</span>
+
+            <p class="shayari-text">
+              Juda hokar bhi tumse juda ho nahi paate,<br />
+              Har raat tumhari yaadon se bach nahi paate.<br /><br />
+
+              Socha tha waqt ke saath sab bhool jayenge,<br />
+              Magar waqt guzarta gaya, aur hum tumhe aur chahte gaye.
+            </p>
+          </article>
+
+          <article class="shayari-block">
+            <span class="shayari-number">02</span>
+
+            <p class="shayari-text">
+              Tum chale gaye toh laga sab khatam ho gaya,<br />
+              Dil toh dhadakta raha, magar jeena kam ho gaya.<br /><br />
+
+              Ab kisi se mohabbat karne ka hausla nahi,<br />
+              Ek tumhare jaane se hi ishq se bharosa uth gaya.
+            </p>
+          </article>
+
+          <article class="shayari-block">
+            <span class="shayari-number">03</span>
+
+            <p class="shayari-text">
+              Teri judai mein humne khud ko tanha paaya hai,<br />
+              Har khushi ke peeche tera gham chhupaya hai.<br /><br />
+
+              Log kehte hain waqt sab dard mita deta hai,<br />
+              Shayad unhone kabhi kisi apne ko khoya nahi hai.
+            </p>
+          </article>
+
+          <article class="shayari-block">
+            <span class="shayari-number">04</span>
+
+            <p class="shayari-text">
+              Tum paas nahi ho, phir bhi har pal paas lagti ho,<br />
+              Meri khamoshi mein bhi tumhari awaaz lagti ho.<br /><br />
+
+              Kaise kahun tumse ki kitna toot chuka hoon main,<br />
+              Tumhari yaad aati hai toh saans lena bhi saza lagti hai.
+            </p>
+          </article>
+
+          <article class="shayari-block">
+            <span class="shayari-number">05</span>
+
+            <p class="shayari-text">
+              Humse bichhad kar tum khush reh lena,<br />
+              Meri kami ko kisi aur se poora kar lena.<br /><br />
+
+              Bas ek baar mudkar dekh lena meri taraf,<br />
+              Shayad meri aankhon mein tumhe apna hi ishq nazar aa jaaye.
+            </p>
+          </article>
+
+          <article class="shayari-block">
+            <span class="shayari-number">06</span>
+
+            <p class="shayari-text">
+              Judaai ne humse woh sab cheen liya,<br />
+              Jo tumhare saath rehkar kabhi khone ka darr tha.<br /><br />
+
+              Ab na tum ho, na woh pehle jaisa dil,<br />
+              Bas tumhari yaadein hain aur ek tanha sa safar.
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <span>© Pavn31</span>
+      <span>judaai / my archive</span>
+    </footer>
+  </body>
+</html>

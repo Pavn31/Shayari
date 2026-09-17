@@ -1,0 +1,336 @@
+/* ─────────────────────────
+   COLLECTIONS PAGE
+───────────────────────── */
+
+.collections-page {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ─────────────────────────
+   HEADER
+───────────────────────── */
+
+.collections-header {
+  padding-bottom: 70px;
+}
+
+.back {
+  display: inline-block;
+
+  margin-bottom: 55px;
+
+  color: var(--cherry);
+
+  font-size: 11px;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+
+  outline: none;
+}
+
+.back:focus-visible {
+  outline: 1px solid var(--cherry);
+  outline-offset: 6px;
+}
+
+.collections-header h1 {
+  color: var(--cherry);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(70px, 12vw, 145px);
+  font-weight: 400;
+
+  line-height: 0.85;
+
+  letter-spacing: -0.06em;
+
+  text-wrap: balance;
+}
+
+.collections-header h1 em {
+  font-weight: 400;
+}
+
+.collection-intro {
+  width: min(450px, 90%);
+
+  margin-top: 35px;
+  margin-left: 13%;
+
+  color: var(--muted);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 20px;
+  font-style: italic;
+
+  line-height: 1.55;
+
+  text-wrap: pretty;
+}
+
+/* ─────────────────────────
+   COLLECTION GRID
+───────────────────────── */
+
+.collection-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* ─────────────────────────
+   CARDS
+───────────────────────── */
+
+.collection-card {
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 34px;
+
+  border: 1px solid var(--border);
+  border-radius: 22px;
+
+  background: var(--glass);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: var(--ink);
+
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-shadow: 0 14px 40px rgba(100, 29, 39, 0.055);
+
+  outline: none;
+}
+
+.collection-card:focus-visible {
+  outline: 1px solid var(--cherry);
+  outline-offset: 6px;
+}
+
+/* ─────────────────────────
+   CARD SIZES
+───────────────────────── */
+
+.collection-card:nth-child(1),
+.collection-card:nth-child(2) {
+  min-height: 360px;
+}
+
+.collection-card:nth-child(3),
+.collection-card:nth-child(4) {
+  min-height: 300px;
+}
+
+.collection-card:nth-child(5) {
+  grid-column: span 2;
+
+  min-height: 280px;
+}
+
+/* ─────────────────────────
+   CARD NUMBER
+───────────────────────── */
+
+.collection-number {
+  position: absolute;
+
+  top: 26px;
+  right: 29px;
+
+  color: var(--cherry-soft);
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+}
+
+/* ─────────────────────────
+   CARD CONTENT
+───────────────────────── */
+
+.collection-content {
+  position: relative;
+  z-index: 1;
+}
+
+.collection-content p {
+  margin-bottom: 13px;
+
+  color: var(--cherry-soft);
+
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 0.25em;
+
+  line-height: 1.4;
+}
+
+.collection-content h2 {
+  max-width: 620px;
+
+  color: var(--cherry);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(32px, 3.8vw, 50px);
+  font-weight: 400;
+
+  line-height: 1.06;
+
+  letter-spacing: -0.025em;
+
+  text-wrap: balance;
+}
+
+.collection-count {
+  display: block;
+
+  margin-top: 23px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  line-height: 1.4;
+}
+
+/* ─────────────────────────
+   TABLET
+───────────────────────── */
+
+@media (max-width: 800px) {
+  .collections-page {
+    width: 100%;
+  }
+
+  .collection-grid {
+    gap: 16px;
+  }
+
+  .collection-card,
+  .collection-card:nth-child(1),
+  .collection-card:nth-child(2),
+  .collection-card:nth-child(3),
+  .collection-card:nth-child(4) {
+    min-height: 300px;
+  }
+
+  .collection-card:nth-child(5) {
+    min-height: 270px;
+  }
+}
+
+/* ─────────────────────────
+   MOBILE
+───────────────────────── */
+
+@media (max-width: 600px) {
+  .collections-header {
+    padding-bottom: 50px;
+  }
+
+  .back {
+    margin-bottom: 40px;
+  }
+
+  .collection-intro {
+    width: 90%;
+
+    margin-left: 3%;
+    margin-top: 30px;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .collection-card,
+  .collection-card:nth-child(1),
+  .collection-card:nth-child(2),
+  .collection-card:nth-child(3),
+  .collection-card:nth-child(4),
+  .collection-card:nth-child(5) {
+    grid-column: auto;
+
+    min-height: 270px;
+  }
+
+  .collection-card:nth-child(1) {
+    min-height: 320px;
+  }
+
+  .collection-card {
+    padding: 30px;
+  }
+
+  .collection-number {
+    top: 23px;
+    right: 25px;
+  }
+
+  .collection-content h2 {
+    font-size: 34px;
+  }
+
+  .collection-count {
+    margin-top: 20px;
+  }
+}
+
+/* ─────────────────────────
+   SMALL PHONES
+───────────────────────── */
+
+@media (max-width: 400px) {
+  .collection-card {
+    min-height: 255px;
+    padding: 27px;
+  }
+
+  .collection-card:nth-child(1) {
+    min-height: 300px;
+  }
+
+  .collection-content h2 {
+    font-size: 30px;
+  }
+
+  .collection-number {
+    top: 21px;
+    right: 22px;
+  }
+}
+
+/* ─────────────────────────
+   REDUCED MOTION
+───────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .collection-card {
+    scroll-behavior: auto;
+  }
+}
